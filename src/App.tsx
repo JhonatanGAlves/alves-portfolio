@@ -1,7 +1,16 @@
+import styled from 'styled-components'
+import { Header } from './components/Header'
+import GlobalStyles from './styles/globals'
+
 export const App = () => {
   return (
-    <div className="App">
-      <h1>Hello World!</h1>
-    </div>
+    <ContainerApp>
+      <Header />
+      <GlobalStyles />
+    </ContainerApp>
   )
 }
+
+const ContainerApp = styled.div`
+  
+`
