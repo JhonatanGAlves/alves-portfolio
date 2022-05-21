@@ -13,4 +13,26 @@ export const Container = styled.header`
   position: fixed;
 
   background: var(--gray-900);
+
+  .social-media {
+    display: flex;
+    flex-direction: column;
+
+    svg {
+      font-size: 1.5rem;
+      color: var(--gray-500);
+      cursor: pointer;
+      
+      transition: color 0.2s;
+
+      &+svg {
+        margin-top: 0.3rem;
+      }
+
+      &:hover {
+        color: #838383;
+      }
+    }
+
+  }
 `
