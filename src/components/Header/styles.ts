@@ -98,4 +98,25 @@ export const Container = styled.header`
     }
     
   }
+
+  .section-languages {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 1.25rem 1rem;
+
+    border-top: 1px solid var(--orange);
+
+    .language {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 1.5rem;
+      }
+    }
+  }
 `
