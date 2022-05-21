@@ -8,6 +8,10 @@ import {
   CodeRounded,
   EmailRounded
 } from '@material-ui/icons'
+import iconBrazil from '../../assets/images/brazil.svg'
+import iconBrazilGray from '../../assets/images/brazil-gray.svg'
+import iconUSA from '../../assets/images/united-states.svg'
+import iconUSAGray from '../../assets/images/united-states-gray.svg'
 
 export const Header = () => {
   return (
@@ -30,6 +34,16 @@ export const Header = () => {
         <a href="#skills-experience"><SchoolRounded /></a>
         <a href="#projects"><CodeRounded /></a>
         <a href="#contact"><EmailRounded /></a>
+      </div>
+      <div className="container-languages">
+        <div className="language">
+          <img src={iconBrazilGray} alt="Bandeira da Seleção Brasileira" />
+          <span>PT</span>
+        </div>
+        <div className="language">
+          <img src={iconUSAGray} alt="Bandeira da Seleção dos Estados Unidos" />
+          <span>EN</span>
+        </div>
       </div>
     </Container>
   )
