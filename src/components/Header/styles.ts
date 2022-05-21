@@ -2,13 +2,12 @@ import styled from "styled-components";
 
 export const Container = styled.header`
   width: 6.25rem;
-  max-width: 6.24rem;
+  max-width: 6.25rem;
   height: 100vh;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.25rem;
 
   position: fixed;
 
@@ -17,6 +16,7 @@ export const Container = styled.header`
   .social-media {
     display: flex;
     flex-direction: column;
+    padding: 1.25rem 0;
 
     svg {
       font-size: 1.5rem;
@@ -34,5 +34,46 @@ export const Container = styled.header`
       }
     }
 
+  }
+
+  .lines {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0.2rem;
+
+    .line-1-switch {
+      width: 6.25rem;
+      height: 1.875rem;
+
+      background: var(--orange);
+    }
+
+    .line-2 {
+      width: 6.25rem;
+      height: 0.625rem;
+
+      background: var(--orange);
+    }
+
+    .line-3 {
+      width: 6.25rem;
+      height: 0.3125rem;
+
+      background: var(--orange);
+    }
+
+    .line-4 {
+      width: 6.25rem;
+      height: 0.1875rem;
+
+      background: var(--orange);
+    }
+
+    .line-5 {
+      width: 6.25rem;
+      height: 0.0625rem;
+
+      background: var(--orange);
+    }
   }
 `
