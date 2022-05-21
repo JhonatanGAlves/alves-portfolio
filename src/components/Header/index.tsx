@@ -9,6 +9,14 @@ export const Header = () => {
         <a href="https://github.com/JhonatanGAlves" target="_blank"><GitHub /></a>
         <a href="https://www.instagram.com/jhonatangalves" target="_blank"><Instagram /></a>
       </div>
+      <div className="lines">
+        <div className="line-1-switch">
+        </div>
+        <div className="line-2"></div>
+        <div className="line-3"></div>
+        <div className="line-4"></div>
+        <div className="line-5"></div>
+      </div>
     </Container>
   )
 }
