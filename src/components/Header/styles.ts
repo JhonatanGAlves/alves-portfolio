@@ -30,7 +30,7 @@ export const Container = styled.header`
       }
 
       &:hover {
-        color: #838383;
+        color: var(--orange);
       }
     }
 
@@ -75,5 +75,27 @@ export const Container = styled.header`
 
       background: var(--orange);
     }
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+
+    svg {
+      font-size: 2.5rem;
+      color: var(--gray-500);
+      cursor: pointer;
+
+      margin-bottom: 1.5rem;
+      
+      transition: color 0.2s;
+
+      &:hover {
+        color: var(--orange);
+      }
+    }
+    
   }
 `
