@@ -12,6 +12,7 @@ export const Container = styled.header`
   position: fixed;
 
   background: var(--primary);
+  box-shadow: 1px 0px 8px #00000025;
 
   .social-media {
     display: flex;
