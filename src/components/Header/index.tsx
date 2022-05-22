@@ -7,7 +7,9 @@ import {
   HomeRounded,
   SchoolRounded,
   CodeRounded,
-  EmailRounded
+  EmailRounded,
+  WbSunnyRounded,
+  Brightness3Rounded
 } from '@material-ui/icons'
 import iconBrazil from '../../assets/images/brazil.svg'
 import iconBrazilLight from '../../assets/images/brazil-light.svg'
@@ -28,9 +30,9 @@ export const Header = ({ toggleTheme }: HeaderProps) => {
   return (
     <Container>
       <div className="social-media">
-        <a href="https://www.linkedin.com/in/jhonatan-gabriel-alves-11b28015b/" target="_blank"><LinkedIn /></a>
-        <a href="https://github.com/JhonatanGAlves" target="_blank"><GitHub /></a>
-        <a href="https://www.instagram.com/jhonatangalves" target="_blank"><Instagram /></a>
+        <a href="https://www.linkedin.com/in/jhonatan-gabriel-alves-11b28015b/" rel="noreferrer" target="_blank"><LinkedIn /></a>
+        <a href="https://github.com/JhonatanGAlves" rel="noreferrer" target="_blank"><GitHub /></a>
+        <a href="https://www.instagram.com/jhonatangalves" rel="noreferrer" target="_blank"><Instagram /></a>
       </div>
       <div className="lines">
         <div className="line-1-switch">
@@ -38,7 +40,20 @@ export const Header = ({ toggleTheme }: HeaderProps) => {
             onChange={toggleTheme}
             checked={title === 'dark'}
             onColor={colors.primary}
-            offColor={colors.secundary}
+            offColor={colors.primary}
+            handleDiameter={20}
+            onHandleColor={colors.secundary}
+            offHandleColor={colors.secundary}
+            checkedIcon={
+              <div className="switch-dark-icon">
+                {title === 'dark' && <WbSunnyRounded />}
+              </div>
+            }
+            uncheckedIcon={
+              <div className="switch-light-icon">
+                {title === 'light' && <Brightness3Rounded />}
+              </div>
+            }
           />
         </div>
         <div className="line-2"></div>
@@ -47,7 +62,7 @@ export const Header = ({ toggleTheme }: HeaderProps) => {
         <div className="line-5"></div>
       </div>
       <div className="nav-menu">
-        <a className="active" href="#"><HomeRounded /></a>
+        <a href="#"><HomeRounded className="active" /></a>
         <a href="#skills-experience"><SchoolRounded /></a>
         <a href="#projects"><CodeRounded /></a>
         <a href="#contact"><EmailRounded /></a>
