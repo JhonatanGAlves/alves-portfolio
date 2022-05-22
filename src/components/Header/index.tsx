@@ -1,3 +1,4 @@
+import { useContext } from 'react'
 import { Container } from './styles'
 import {
   LinkedIn,
@@ -9,11 +10,21 @@ import {
   EmailRounded
 } from '@material-ui/icons'
 import iconBrazil from '../../assets/images/brazil.svg'
-import iconBrazilGray from '../../assets/images/brazil-gray.svg'
+import iconBrazilLight from '../../assets/images/brazil-light.svg'
+import iconBrazilDark from '../../assets/images/brazil-dark.svg'
 import iconUSA from '../../assets/images/united-states.svg'
-import iconUSAGray from '../../assets/images/united-states-gray.svg'
+import iconUSALight from '../../assets/images/united-states-light.svg'
+import iconUSADark from '../../assets/images/united-states-dark.svg'
+import Switch from 'react-switch'
+import { ThemeContext } from 'styled-components'
 
-export const Header = () => {
+type HeaderProps = {
+  toggleTheme(): void
+}
+
+export const Header = ({ toggleTheme }: HeaderProps) => {
+  const { colors, title } = useContext(ThemeContext)
+
   return (
     <Container>
       <div className="social-media">
@@ -23,6 +34,12 @@ export const Header = () => {
       </div>
       <div className="lines">
         <div className="line-1-switch">
+          <Switch
+            onChange={toggleTheme}
+            checked={title === 'dark'}
+            onColor={colors.primary}
+            offColor={colors.secundary}
+          />
         </div>
         <div className="line-2"></div>
         <div className="line-3"></div>
@@ -37,11 +54,19 @@ export const Header = () => {
       </div>
       <div className="container-languages">
         <div className="language">
-          <img src={iconBrazilGray} alt="Bandeira da Seleção Brasileira" />
+          {title === 'dark' ? (
+            <img src={iconBrazilDark} alt="Bandeira da Seleção Brasileira" />
+          ) : (
+            <img src={iconBrazilLight} alt="Bandeira da Seleção Brasileira" />
+          )}
           <span>PT</span>
         </div>
         <div className="language">
-          <img src={iconUSAGray} alt="Bandeira da Seleção dos Estados Unidos" />
+          {title === 'dark' ? (
+            <img src={iconUSADark} alt="Bandeira da Seleção dos Estados Unidos" />
+          ) : (
+            <img src={iconUSALight} alt="Bandeira da Seleção dos Estados Unidos" />
+          )}
           <span>EN</span>
         </div>
       </div>
