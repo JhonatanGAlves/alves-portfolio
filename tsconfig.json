@@ -22,5 +22,9 @@
   },
   "include": [
     "src"
+  ],
+  // Arquivos a mais que eu quero carregar na aplicação.
+  "files": [
+    "src/styles/styled.d.ts"
   ]
 }
