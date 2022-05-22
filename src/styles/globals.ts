@@ -2,11 +2,10 @@ import { createGlobalStyle } from "styled-components"
 
 export default createGlobalStyle`
   :root {
-    --gray-0: #FFFFFF;
-    --gray-500: #8D8D8D;
-    --gray-800: #242424;
-    --gray-900: #181818;
-    --orange: #FF6B00;
+    --primary: ${props => props.theme.colors.primary};
+    --secundary: ${props => props.theme.colors.secundary};
+    --background: ${props => props.theme.colors.background};
+    --text: ${props => props.theme.colors.text};
   }
 
   *,
@@ -28,8 +27,8 @@ export default createGlobalStyle`
   }
 
   body {
-    background: var(--gray-800);
-    color: var(--gray-500); 
+    background: var(--background);
+    color: var(--text);
     /* transition: all 0.25s linear; */
   }
 
