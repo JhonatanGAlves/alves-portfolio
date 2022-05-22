@@ -11,7 +11,7 @@ export const Container = styled.header`
 
   position: fixed;
 
-  background: var(--gray-900);
+  background: var(--primary);
 
   .social-media {
     display: flex;
@@ -20,7 +20,7 @@ export const Container = styled.header`
 
     svg {
       font-size: 1.5rem;
-      color: var(--gray-500);
+      color: var(--text);
       cursor: pointer;
       
       transition: color 0.2s;
@@ -30,7 +30,7 @@ export const Container = styled.header`
       }
 
       &:hover {
-        color: var(--orange);
+        color: var(--secundary);
       }
     }
 
@@ -44,36 +44,41 @@ export const Container = styled.header`
     .line-1-switch {
       width: 6.25rem;
       height: 1.875rem;
+      padding: 1rem;
 
-      background: var(--orange);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background: var(--secundary);
     }
 
     .line-2 {
       width: 6.25rem;
       height: 0.625rem;
 
-      background: var(--orange);
+      background: var(--secundary);
     }
 
     .line-3 {
       width: 6.25rem;
       height: 0.3125rem;
 
-      background: var(--orange);
+      background: var(--secundary);
     }
 
     .line-4 {
       width: 6.25rem;
       height: 0.1875rem;
 
-      background: var(--orange);
+      background: var(--secundary);
     }
 
     .line-5 {
       width: 6.25rem;
       height: 0.0625rem;
 
-      background: var(--orange);
+      background: var(--secundary);
     }
   }
 
@@ -85,7 +90,7 @@ export const Container = styled.header`
 
     svg {
       font-size: 2.5rem;
-      color: var(--gray-500);
+      color: var(--text);
       cursor: pointer;
 
       margin-bottom: 1.5rem;
@@ -93,20 +98,20 @@ export const Container = styled.header`
       transition: color 0.2s;
 
       &:hover {
-        color: var(--orange);
+        color: var(--secundary);
       }
     }
     
   }
 
-  .section-languages {
+  .container-languages {
     display: grid;
     grid-template-columns: auto auto;
     gap: 0.5rem;
     width: 100%;
     padding: 1.25rem 1rem;
 
-    border-top: 1px solid var(--orange);
+    border-top: 1px solid var(--secundary);
 
     .language {
       display: flex;
