@@ -41,44 +41,64 @@ export const Container = styled.header`
     grid-template-columns: auto;
     gap: 0.2rem;
 
-    .line-1-switch {
+    .line-1-switch, .line-2, .line-3, .line-4, .line-5 {
       width: 6.25rem;
+
+      background: var(--secundary);
+    }
+
+    .line-1-switch {
       height: 1.875rem;
       padding: 1rem;
 
       display: flex;
       justify-content: center;
       align-items: center;
+      
+      .switch-dark-icon {
+        display: flex;
+        align-items: center;
 
-      background: var(--secundary);
+        padding-left: 0.5rem;
+        height: 100%;
+
+        svg {
+          font-size: 1rem;
+  
+          color: var(--text);
+        }
+      }
+
+      .switch-light-icon {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+
+        padding-right: 0.5rem;
+        height: 100%;
+
+        svg {
+          font-size: 1rem;
+  
+          color: var(--text);
+        }
+      }
     }
 
     .line-2 {
-      width: 6.25rem;
       height: 0.625rem;
-
-      background: var(--secundary);
     }
 
     .line-3 {
-      width: 6.25rem;
       height: 0.3125rem;
-
-      background: var(--secundary);
     }
 
     .line-4 {
-      width: 6.25rem;
       height: 0.1875rem;
-
-      background: var(--secundary);
     }
 
     .line-5 {
-      width: 6.25rem;
       height: 0.0625rem;
-
-      background: var(--secundary);
     }
   }
 
@@ -98,6 +118,10 @@ export const Container = styled.header`
       transition: color 0.2s;
 
       &:hover {
+        color: var(--secundary);
+      }
+
+      &.active {
         color: var(--secundary);
       }
     }
@@ -121,6 +145,7 @@ export const Container = styled.header`
 
       img {
         width: 1.5rem;
+        cursor: pointer;
       }
     }
   }
