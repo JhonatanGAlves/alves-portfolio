@@ -10,6 +10,9 @@ export const Container = styled.header`
   align-items: center;
 
   position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
 
   background: var(--primary);
   box-shadow: 1px 0px 8px #00000025;

@@ -11,14 +11,9 @@ import {
   WbSunnyRounded,
   Brightness3Rounded
 } from '@material-ui/icons'
-import iconBrazil from '../../assets/images/brazil.svg'
-import iconBrazilLight from '../../assets/images/brazil-light.svg'
-import iconBrazilDark from '../../assets/images/brazil-dark.svg'
-import iconUSA from '../../assets/images/united-states.svg'
-import iconUSALight from '../../assets/images/united-states-light.svg'
-import iconUSADark from '../../assets/images/united-states-dark.svg'
 import Switch from 'react-switch'
 import { ThemeContext } from 'styled-components'
+import I18n from '../I18n/I18n'
 
 type HeaderProps = {
   toggleTheme(): void
@@ -68,22 +63,7 @@ export const Header = ({ toggleTheme }: HeaderProps) => {
         <a href="#contact"><EmailRounded /></a>
       </div>
       <div className="container-languages">
-        <div className="language">
-          {title === 'dark' ? (
-            <img src={iconBrazilDark} alt="Bandeira da Seleção Brasileira" />
-          ) : (
-            <img src={iconBrazilLight} alt="Bandeira da Seleção Brasileira" />
-          )}
-          <span>PT</span>
-        </div>
-        <div className="language">
-          {title === 'dark' ? (
-            <img src={iconUSADark} alt="Bandeira da Seleção dos Estados Unidos" />
-          ) : (
-            <img src={iconUSALight} alt="Bandeira da Seleção dos Estados Unidos" />
-          )}
-          <span>EN</span>
-        </div>
+        <I18n />
       </div>
     </Container>
   )
