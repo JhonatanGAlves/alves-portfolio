@@ -1,5 +1,13 @@
 export default {
   translations: { // Mesmo valor usado nas configurações (defaultNS)
+    headerMobile: {
+      menu: {
+        home: "início",
+        skills: "skills",
+        projects: "projetos",
+        contacts: "contatos"
+      }
+    },
     hero: {
       h1: {
         span: "Olá, sou o"
