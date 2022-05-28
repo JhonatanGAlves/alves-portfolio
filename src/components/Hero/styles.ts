@@ -9,6 +9,12 @@ export const Container = styled.section`
   width: calc(100% - 6.25rem);
   height: 100vh;
 
+  @media (max-width: 390px) {
+    width: 100%;
+    right: 0rem;
+    left: 0rem;
+  }
+
   video {
     position: absolute;
     right: 0;
@@ -36,6 +42,18 @@ export const Container = styled.section`
 
     position: relative;
 
+    @media (max-width: 820px) {
+      padding: 0 5rem 4rem;
+      justify-content: flex-end;
+    }
+
+    @media (max-width: 390px) {
+      width: 100%;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+
     h1 {
       padding: 0;
       margin: 0;
@@ -54,14 +72,24 @@ export const Container = styled.section`
       }
     }
 
-    .Typewriter span {
-      font-size: 1.5rem;
-      font-weight: 500;
+    .Typewriter {
+      @media (max-width: 820px) {
+        height: 3.5rem;
+      }
 
-      color: #8D8D8D;
+      @media (max-width: 390px) {
+        height: 7.5rem;
+      }
 
-      .Typewriter__cursor {
-        color: var(--secundary) !important;
+      span {
+        font-size: 1.5rem;
+        font-weight: 500;
+  
+        color: #8D8D8D;
+  
+        .Typewriter__cursor {
+          color: var(--secundary) !important;
+        }
       }
     }
     
@@ -102,6 +130,15 @@ export const Container = styled.section`
       box-shadow: -30px 25px 0 var(--secundary);
 
       background: var(--primary);
+
+      @media (max-width: 820px) {
+        top: 34rem;
+        right: 3rem;
+      }
+
+      @media (max-width: 390px) {
+        display: none;
+      }
 
       img {
         position: absolute;

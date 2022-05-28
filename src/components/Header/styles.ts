@@ -17,6 +17,10 @@ export const Container = styled.header`
   background: var(--primary);
   box-shadow: 1px 0px 8px #00000025;
 
+  @media (max-width: 390px) {
+    display: none;
+  }
+
   .social-media {
     display: flex;
     flex-direction: column;
