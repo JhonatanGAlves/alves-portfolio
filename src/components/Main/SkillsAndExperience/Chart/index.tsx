@@ -11,7 +11,7 @@ export const Chart = ({ technology, className, style }: ChartProps) => {
     <div className="chart">
       <span>{technology}</span>
       <footer>
-        <div className={className} style={style}></div>
+        <div className={className} style={style} />
       </footer>
     </div>
   )
