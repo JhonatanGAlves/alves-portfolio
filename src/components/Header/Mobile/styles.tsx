@@ -6,7 +6,7 @@ export const Container = styled.header`
   @media (max-width: 390px) {
     display: block;
     width: 100%;
-    position: absolute;
+    position: fixed;
 
     z-index: 3;
 
@@ -53,6 +53,9 @@ export const Container = styled.header`
     }
 
     .content-menu {
+      display: flex;
+      flex-direction: column;
+
       position: absolute;
       top: 0;
 
@@ -65,11 +68,12 @@ export const Container = styled.header`
       .close-button {
         display: flex;
         justify-content: right;
-        height: 1.5rem;
 
         svg {
           font-size: 2rem;
         }
+
+        background: aquamarine;
       }
 
       .hamburguer-menu {
@@ -77,8 +81,9 @@ export const Container = styled.header`
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        flex: 1;
 
-        padding: 17rem 0;
+        background: blue;
 
         a {
           font-size: 2.5rem;
@@ -102,11 +107,11 @@ export const Container = styled.header`
         grid-template-columns: auto auto;
         gap: 0.5rem;
         width: 100%;
-        height: 2rem;
         padding: 1.25rem 1rem;
         
-
         border-top: 1px solid var(--secundary);
+
+        background: greenyellow;
 
         .language {
           display: flex;
