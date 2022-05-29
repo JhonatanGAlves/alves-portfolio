@@ -6,6 +6,7 @@ import dark from '../src/styles/themes/dark'
 import { usePersistedState } from './utils/usePersistedState'
 import { Hero } from './components/Hero'
 import { HeaderMobile } from './components/Header/Mobile'
+import { SkillsAndExperience } from './components/Main/SkillsAndExperience'
 
 export const App = () => {
   const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', dark)
@@ -18,6 +19,7 @@ export const App = () => {
       <Header toggleTheme={toggleTheme} />
       <HeaderMobile toggleTheme={toggleTheme} />
       <Hero />
+      <SkillsAndExperience />
       <GlobalStyles />
     </ThemeProvider>
   )
