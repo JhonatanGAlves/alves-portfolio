@@ -2,9 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   display: flex;
-
-  position: absolute;
-  left: 6.25rem;
+  padding-left: 6.25rem;
   
   width: calc(100% - 6.25rem);
   height: 100vh;
@@ -13,6 +11,7 @@ export const Container = styled.section`
     width: 100%;
     right: 0rem;
     left: 0rem;
+    padding-left: 0;
   }
 
   video {
