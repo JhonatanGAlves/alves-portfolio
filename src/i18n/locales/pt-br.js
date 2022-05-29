@@ -19,6 +19,12 @@ export default {
         fourth: "const formacao = 'Análise e Desenvolvimento de Sistemas'",
       },
       button: "contato"
+    },
+    main: {
+      skillsAndExperience: {
+        h1: "Skills e ",
+        span: "Experiências"
+      }
     }
   }
 }

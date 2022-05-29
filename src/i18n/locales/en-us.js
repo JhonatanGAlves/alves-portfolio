@@ -19,6 +19,12 @@ export default {
         fourth: "const academicEducation = 'Analysis and systems development'",
       },
       button: "contact"
+    },
+    main: {
+      skillsAndExperience: {
+        h1: "Skills and ",
+        span: "Experiences"
+      }
     }
   }
 }
