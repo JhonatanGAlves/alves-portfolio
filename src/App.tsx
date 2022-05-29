@@ -8,7 +8,7 @@ import { Hero } from './components/Hero'
 import { HeaderMobile } from './components/Header/Mobile'
 
 export const App = () => {
-  const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', light)
+  const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', dark)
   const toggleTheme = () => {
     setTheme(theme.title === 'light' ? dark : light)
   }
