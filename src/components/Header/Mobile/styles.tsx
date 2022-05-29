@@ -72,8 +72,6 @@ export const Container = styled.header`
         svg {
           font-size: 2rem;
         }
-
-        background: aquamarine;
       }
 
       .hamburguer-menu {
@@ -82,8 +80,6 @@ export const Container = styled.header`
         justify-content: center;
         align-items: center;
         flex: 1;
-
-        background: blue;
 
         a {
           font-size: 2.5rem;
@@ -110,8 +106,6 @@ export const Container = styled.header`
         padding: 1.25rem 1rem;
         
         border-top: 1px solid var(--secundary);
-
-        background: greenyellow;
 
         .language {
           display: flex;
